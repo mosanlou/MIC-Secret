@@ -8,7 +8,7 @@
     <style>
 
 :root {
-  --card-height: 65vh;
+  --card-height: 65vh; 
   --card-width: calc(var(--card-height) / 1.5);
 }
 
@@ -22,14 +22,14 @@ body {
   padding-bottom: 2rem;
   box-sizing: border-box;
 }
-h2 {
+h1 {
   color: white;
   font-family: "Titan One", cursive;
   margin-bottom: 20px;
 }
 .card {
   background: url("./MIC_Website_Logo.png");
-  
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: var(--card-width);
@@ -60,13 +60,12 @@ h2 {
   content: "";
   width: 104%;
   height: 102%;
-  border-radius: 29px;
+  border-radius: 8px;
   background-image: linear-gradient(
     var(--rotate),
-    #BBFBFF,
-    #8DD8FF 43%,
-    #4E71FF
-     
+    #5ddcff,
+    #3c67e3 43%,
+    #4e00c2
   );
   position: absolute;
   z-index: -1;
@@ -95,7 +94,7 @@ h2 {
   );
   opacity: 1;
   transition: opacity 0.5s;
-  animation: spin 20.5s linear infinite;
+  animation: spin 2.5s linear infinite;
 }
 @property --rotate {
   syntax: "<angle>";
@@ -125,7 +124,6 @@ a {
   font-size: 24px;
   font-family: "Titan One", cursive;
 }
-
 </style>
 
 </head>
